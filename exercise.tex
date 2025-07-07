@@ -6,24 +6,26 @@
 \input{layout}
 
 % タイトルと氏名を変更せよ．
-\title{タイトル}
-\author{蓑原 隆}
+\title{日本におけるデジタル化の状況}
+\author{G584962025   矢島貴心}
 
 \begin{document}
 
 \maketitle %ここにタイトルが入る
+\
 
 % ここから本文
 % 節見出し: \section{}
 % を使う
-
+\section{デジタル競争ランキング}
 % 本文(1)
 %  参考文献の参照: \cite{}
 %  図番号の参照： \ref{}
 % を使う
 % 文献データベースのキーワードは oecd と imd
 % になっている．
-
+国際経営開発研究所（IMD）の調査\cite{imd}によると、日本のデジタル競争力のランキングは図\ref{graph}に示すよ
+うに、調査対象の64カ国中、総合で28位、知識分野で25位となっている。
 % 図の挿入
 % \includegraphics{}
 % を
@@ -37,12 +39,18 @@
 % また，
 % \centering
 % で図が中央に来るようにする
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{fig31.png}
+    \caption{デジタル競争力ランキング(64カ国中)}\label{graph}
+
+\end{figure}
 
 % ーーー
 % 節見出し(2)
-
+\section{ブロードバンドの整備状況}
 % 本文(2)
-
+OECDによるブロードバンド回線の普及に関する調査\cite{oecd}によると、表\ref{country}に示すように,日本における100人あたりのモバイルブロードバンドの加入者数は190.5で、第1位になっている。2位はエストチアで,3位米国と続く。
 % 表の挿入
 % \begin{tabular}
 % \end{tabular}    
@@ -57,15 +65,47 @@
 % また，
 % \centering
 % で表が中央に来るようにする
-
+\begin{table}[htbp]
+    \centering
+    \caption{ モバイルブロードバンドの加入者数(100人あたり)}\label{country}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        順位 & 国名 & 加入者数 \\
+        \hline
+        1位 & 日本 & 190.5 \\
+        \hline
+        2位 & エストニア & 179.5 \\
+        \hline
+        3位 & 米国 & 169.0 \\
+        \hline
+        4位 & フィンランド & 157.0 \\
+        \hline
+        5位 & デンマーク & 141.7 \\
+        \hline
+        6位 & ラトビア & 141.6 \\
+        \hline
+        7位 & イスラエル & 139.9 \\
+        \hline
+        8位 & オランダ & 133.7 \\
+        \hline
+        9位 & ポーランド & 131.3 \\
+        \hline
+        10位 & スウェーデン & 127.2 \\
+        \hline
+    \end{tabular}
+\end{table}
 % ーーー
 % 見出し(3)
+\section{考察}
 % 考察
+\begin{itemize}
+    \item アメリカはデジタル競争力ランキングでは一位だが、ブロードバンドの加入者数は3位と、デジタル競争ランキング3位の日本に劣る。そのため、デジタル競争ランキングとブロードバンドの加入者数にはあまり相関がないと感じる。
+    \item 日本や韓国や中国などアジア圏の国が比較的多い
+\end{itemize}
 %
 % \begin{itemize}
 % \end{itemize}
 % を使って箇条書きで記述する
-
 % ここに参考文献が入る
 %
 \bibliographystyle{junsrt}
